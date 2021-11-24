@@ -1,0 +1,6 @@
+project(Template)
+set(CMAKE_CXX_STANDARD 20)
+add_subdirectory(fmt)
+add_subdirectory(googletest)
+add_executable(GoogleTest ../src/tests/tests.cpp)
+target_link_libraries(GoogleTest gtest gtest_main fmt::fmt)
