@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-project(Template)
+project(dway-heap)
 
 add_subdirectory(include)
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Template main.cpp)
-target_link_libraries(Template fmt::fmt)
+add_executable(dway-heap main.cpp src/heap.cpp src/heap.h src/DHNode.cpp src/DHNode.h)
+target_link_libraries(dway-heap fmt::fmt)
